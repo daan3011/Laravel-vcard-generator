@@ -5,7 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="flex flex-no-wrap">
+<div class="flex">
+    <aside class="h-screen sticky top-0">
         <!-- Sidebar starts -->
         <!-- Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] -->
         <div style="min-height: 716px"
@@ -389,18 +390,13 @@
             </div>
         </div>
         <!-- Sidebar ends -->
-        <!-- Remove class [ h-64 ] when adding a card block -->
-        <div class="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
-            <!-- Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border -->
-            <div class="w-full h-full rounded">
-                <!-- Place your content here -->
+    </aside>
+
+    <main class="w-screen py-8 px-8 bg-gray-100">
 
 
-                <!-- total scans -->
-                <!-- Number of v cards -->
 
-
-                <!-- Card is full width. Use in 12 col grid for best view. -->
+        <!-- Card is full width. Use in 12 col grid for best view. -->
                 <!-- Card code block start -->
                 <div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
                     <a aria-label="card 1" href="javascript:void(0)"
@@ -482,156 +478,606 @@
                 <!-- Card code block end -->
 
 
-                <div class="overflow-x-auto text-right mt-8 mb-4">
-                    <button class="btn btn-primary align-right"><a>Create V-card</a></button>
-                </div>
-
-                <div class="overflow-x-auto">
-                    <table class="table w-full">
-                        <thead>
-                            <tr>
-                                <th>
-                                </th>
-                                <th>Qr-code</th>
-                                <th>V-card name</th>
-                                <th>Link</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" class="checkbox">
-                                    </label>
-                                </th>
-                                <td>
-                                    <div class="flex items-center space-x-3">
-                                        <div class="avatar">
-                                            <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
-                                                    alt="Avatar Tailwind CSS Component">
-                                            </div>
-                                        </div>
+        <!-- Table start -->
+        <div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 my-7">
+            <div class="overflow-x-auto">
+            <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>Qr-code</th>
+                        <th>V-card name</th>
+                        <th>Link</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
                                     </div>
-                                </td>
-                                <td>
-                                    <div>
-                                        <div class="font-bold">
-                                            Hart Hagerty
-                                        </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="font-bold">
+                                    Hart Hagerty
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Zemlak, Daniel and Leannon
+                        </td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
                                     </div>
-                                </td>
-                                <td>
-                                    Zemlak, Daniel and Leannon
-                                </td>
-                                <th>
-                                    <button class="btn btn-primary align-right"><a>Edit</a></button>
-                                </th>
-                                <th>
-                                    <button class="btn btn-dark align-right"><a>Delete</a></button>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" class="checkbox">
-                                    </label>
-                                </th>
-                                <td>
-                                    <div class="flex items-center space-x-3">
-                                        <div class="avatar">
-                                            <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
-                                                    alt="Avatar Tailwind CSS Component">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Carroll Group
+                        </td>
+                        <td>Red</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
                                     </div>
-                                </td>
-                                <td>
-                                    Carroll Group
-                                </td>
-                                <td>Red</td>
-                                <th>
-                                    <button class="btn btn-primary align-right"><a>Edit</a></button>
-                                </th>
-                                <th>
-                                    <button class="btn btn-dark align-right"><a>Delete</a></button>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" class="checkbox">
-                                    </label>
-                                </th>
-                                <td>
-                                    <div class="flex items-center space-x-3">
-                                        <div class="avatar">
-                                            <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
-                                                    alt="Avatar Tailwind CSS Component">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Rowe-Schoen
+                        </td>
+                        <td>Crimson</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
                                     </div>
-                                </td>
-                                <td>
-                                    Rowe-Schoen
-                                </td>
-                                <td>Crimson</td>
-                                <th>
-                                    <button class="btn btn-primary align-right"><a>Edit</a></button>
-                                </th>
-                                <th>
-                                    <button class="btn btn-dark align-right"><a>Delete</a></button>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" class="checkbox">
-                                    </label>
-                                </th>
-                                <td>
-                                    <div class="flex items-center space-x-3">
-                                        <div class="avatar">
-                                            <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
-                                                    alt="Avatar Tailwind CSS Component">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    Wyman-Ledner
-                                </td>
-                                <td>Indigo</td>
-                                <th>
-                                    <button class="btn btn-primary align-right"><a>Edit</a></button>
-                                </th>
-                                <th>
-                                    <button class="btn btn-dark align-right"><a>Delete</a></button>
-                                </th>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-
-            </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Wyman-Ledner
+                        </td>
+                        <td>Indigo</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
-    </div>
-    <script src="{{ mix('js/nav.js') }}"></script>
+
+            
+        </div>
+        <!-- Table end -->
+
+
+
+        <!-- Table start -->
+        <div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 my-7">
+            <div class="overflow-x-auto">
+            <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>Qr-code</th>
+                        <th>V-card name</th>
+                        <th>Link</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="font-bold">
+                                    Hart Hagerty
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Zemlak, Daniel and Leannon
+                        </td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Carroll Group
+                        </td>
+                        <td>Red</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Rowe-Schoen
+                        </td>
+                        <td>Crimson</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Wyman-Ledner
+                        </td>
+                        <td>Indigo</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+            
+        </div>
+        <!-- Table end -->
+
+
+        <!-- Table start -->
+        <div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 my-7">
+            <div class="overflow-x-auto">
+            <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>Qr-code</th>
+                        <th>V-card name</th>
+                        <th>Link</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="font-bold">
+                                    Hart Hagerty
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Zemlak, Daniel and Leannon
+                        </td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Carroll Group
+                        </td>
+                        <td>Red</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Rowe-Schoen
+                        </td>
+                        <td>Crimson</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Wyman-Ledner
+                        </td>
+                        <td>Indigo</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+            
+        </div>
+        <!-- Table end -->
+
+
+        <!-- Table start -->
+        <div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 my-7">
+            <div class="overflow-x-auto">
+            <table class="table w-full">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>Qr-code</th>
+                        <th>V-card name</th>
+                        <th>Link</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="font-bold">
+                                    Hart Hagerty
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Zemlak, Daniel and Leannon
+                        </td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Carroll Group
+                        </td>
+                        <td>Red</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Rowe-Schoen
+                        </td>
+                        <td>Crimson</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label>
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center space-x-3">
+                                <div class="avatar">
+                                    <div class="w-12 h-12 mask mask-squircle">
+                                        <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
+                                            alt="Avatar Tailwind CSS Component">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Wyman-Ledner
+                        </td>
+                        <td>Indigo</td>
+                        <th>
+                            <button class="btn btn-primary align-right"><a>Edit</a></button>
+                        </th>
+                        <th>
+                            <button class="btn btn-dark align-right"><a>Delete</a></button>
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+            
+        </div>
+        <!-- Table end -->
+
+
+    </main>
+</div>
+<script src="{{ mix('js/nav.js') }}"></script>
 @endsection
 
 

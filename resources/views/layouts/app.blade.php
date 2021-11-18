@@ -10,10 +10,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{-- mix('js/app.js') --}}" defer></script>
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <livewire:styles />
 
     @yield('assets')
 </head>
@@ -48,6 +50,7 @@
         </header>
 
         @yield('content')
+        <livewire:scripts />
     </div>
 </body>
 </html>
