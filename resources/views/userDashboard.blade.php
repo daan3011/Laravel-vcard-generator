@@ -58,7 +58,7 @@
                     </li>
                     <li
                         class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                        <a href="javascript:void(0)"
+                        <a href="{{ URL::route('vcard') }}"
                             class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-qrcode" width="18"
                                 height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -510,7 +510,7 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
                                             <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://daisyui.com/tailwind-css-component-profile-2@56w.png"
+                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
                                                     alt="Avatar Tailwind CSS Component">
                                             </div>
                                         </div>
@@ -543,7 +543,7 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
                                             <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://daisyui.com/tailwind-css-component-profile-2@56w.png"
+                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
                                                     alt="Avatar Tailwind CSS Component">
                                             </div>
                                         </div>
@@ -570,7 +570,7 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
                                             <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://daisyui.com/tailwind-css-component-profile-2@56w.png"
+                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
                                                     alt="Avatar Tailwind CSS Component">
                                             </div>
                                         </div>
@@ -597,7 +597,7 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
                                             <div class="w-12 h-12 mask mask-squircle">
-                                                <img src="https://daisyui.com/tailwind-css-component-profile-2@56w.png"
+                                                <img src="https://image.similarpng.com/very-thumbnail/2021/06/Qr-code-sign-on-transparent-background-PNG.png"
                                                     alt="Avatar Tailwind CSS Component">
                                             </div>
                                         </div>
@@ -633,3 +633,10 @@
     </div>
     <script src="{{ mix('js/nav.js') }}"></script>
 @endsection
+
+
+
+
+
+
+
