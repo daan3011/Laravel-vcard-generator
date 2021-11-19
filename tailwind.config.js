@@ -1,8 +1,15 @@
 module.exports = {
-  purge: [
-    './resources/views/**/*.blade.php',
-    './resources/css/**/*.css',
+  purge: {
+    enabled: true,
+    content: ['./resources/views/**/*.blade.php',
+    './resources/css/**/*.css'
   ],
+  safelist: [
+    'hidden',
+    'flex',
+    'grid',
+  ]
+  },
   theme: {
 
     extend: {}

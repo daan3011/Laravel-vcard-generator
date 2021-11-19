@@ -16,6 +16,8 @@ class CreateVcardForm extends Component
     public $email;
     public $password;
     public $confirmPassword;
+    public $test;
+    public $test2;
 
     public $pages = [
         1 => [
@@ -25,6 +27,10 @@ class CreateVcardForm extends Component
         2 => [
             'heading' => 'Password',
             'subheading' => 'Create a password for the new account.',
+        ],
+        3 => [
+            'heading' => 'Test',
+            'subheading' => 'Test page',
         ],
     ];
 
@@ -37,6 +43,10 @@ class CreateVcardForm extends Component
         2 => [
             'password' => ['required', 'string', 'min:8'],
             'confirmPassword' => ['required', 'string', 'same:password', 'min:8'],
+        ],
+        3 => [
+            'test' => ['required', 'string', 'min:8'],
+            'test2' => ['required', 'string', 'min:8'],
         ],
     ];
 
