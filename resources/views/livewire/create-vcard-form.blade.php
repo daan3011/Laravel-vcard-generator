@@ -1,8 +1,4 @@
-<div>
-    <div class="py-12">
-        <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
-            <div class="mt-10 sm:mt-0">
-                <div class="md:grid md:grid-cols-3 md:gap-6">
+<div class="w-full grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 my-7">
               
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         @if ($errors->isNotEmpty())
@@ -113,8 +109,4 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
