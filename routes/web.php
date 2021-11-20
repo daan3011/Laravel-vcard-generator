@@ -30,6 +30,8 @@ Route::get('/user-dashboard/scroll', [UserDashboardController::class, 'scroll'])
 
 Route::get('/create-vcard', [CreateVcardController::class, 'createVcard'])->name('vcard');
 
+Route::get('/qr', [CreateVcardController::class, 'index'])->name('qrcode');
+
 Auth::routes();
 
 //Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
