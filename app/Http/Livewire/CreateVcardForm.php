@@ -18,9 +18,10 @@ class CreateVcardForm extends Component
     public $confirmPassword;
 
 
-
+    public $templates;
     public $templateName;
-    public $template;
+
+
 
     public $pages = [
         1 => [
@@ -53,6 +54,13 @@ class CreateVcardForm extends Component
         ],
     ];
 
+
+
+    public function mount($templates)
+    {
+        $this->templates = array_values(array_filter($templates));
+    }
+
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName, $this->validationRules[$this->currentPage]);
@@ -74,17 +82,11 @@ class CreateVcardForm extends Component
         $this->reset('success');
     }
 
-    public function selectTemplate()
+    public function selectTemplate($template)
     {
-        $list = [];
-        $files = scandir('../resources/views');
-        foreach ($files as $file) {
-            $cleanFile = substr($file, 0, -10);
-            echo $cleanFile . PHP_EOL;
-            array_push($list, $cleanFile);
-        }
-        $list = array_values(array_filter($list, 'strlen'));
-        dd($list);
+        //dd('ja');
+        $this->templateName = $template;
+        dd($template);
     }
 
     public function submit()

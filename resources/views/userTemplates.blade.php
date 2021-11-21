@@ -392,7 +392,7 @@
     </aside>
 
     <main>
-        <section class="text-gray-600 body-font">
+        <!--<section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4">
 
@@ -630,8 +630,54 @@
 
                 </div>
             </div>
-        </section>
+        </section>-->
         <script src="{{ mix('js/nav.js') }}"></script>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- start test section -->
+
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+
+                    
+                    @foreach ($templates as $template)
+                        
+
+                    <div class="p-4 md:w-1/3 text-center">
+                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-96 md:h-36 w-full object-cover object-center"
+                                src="{{ asset('img/test-v-card.png') }}" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                    CATEGORY</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ $template }}</h1>
+                                <div class="flex items-center flex-wrap justify-center">
+                                    <button class="btn btn-primary"><a>Select template</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @endforeach
+
+
+        </section>
+
+        <!-- end test section -->
+
+
+
     </main>
 </div>
 @endsection

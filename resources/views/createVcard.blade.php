@@ -481,7 +481,7 @@
 
                 <!-- Form start -->
 
-                  @livewire('create-vcard-form') <!-- Hier nog variablen zoals message meegeven aan de form -->
+                  @livewire('create-vcard-form', ['templates' => $templates]) <!-- Hier nog variablen zoals message meegeven aan de form -->
 
 
                 <!-- form end -->

@@ -26,6 +26,8 @@ Route::get('/user-dashboard/statistics', [UserDashboardController::class, 'stati
 
 Route::get('/user-dashboard/templates', [UserDashboardController::class, 'templates'])->name('templates');
 
+Route::get('/user-dashboard/dir', [UserDashboardController::class, 'testSubDir']);
+
 Route::get('/user-dashboard/scroll', [UserDashboardController::class, 'scroll']);
 
 Route::get('/create-vcard', [CreateVcardController::class, 'createVcard'])->name('vcard');
