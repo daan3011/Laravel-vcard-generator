@@ -235,7 +235,7 @@
                                     CATEGORY</h2>
                                     <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{ $template }} </h1>
                                     <div class="flex items-center flex-wrap justify-center">
-                                        <button wire:click="selectTemplate({{ $template }})" type="button"
+                                        <button wire:click="selectTemplate('{{ $template }}')" type="button"
                                             class="btn btn-primary">Select template</button>
                                 </div>
                             </div>

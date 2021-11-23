@@ -19,7 +19,7 @@ class CreateVcardForm extends Component
 
 
     public $templates;
-    public $templateName;
+    //public $templateName;
 
 
 
@@ -56,10 +56,11 @@ class CreateVcardForm extends Component
 
 
 
-    public function mount($templates)
+    /*public function mount($templates)
     {
-        $this->templates = array_values(array_filter($templates));
-    }
+        $this->templates = $templates;
+
+    }*/
 
     public function updated($propertyName)
     {
@@ -85,7 +86,7 @@ class CreateVcardForm extends Component
     public function selectTemplate($template)
     {
         //dd('ja');
-        $this->templateName = $template;
+        //$this->templateName = $template;
         dd($template);
     }
 
